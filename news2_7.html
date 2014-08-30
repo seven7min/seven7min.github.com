@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="news_css.css"/>
+<link rel="stylesheet" type="text/css" href="navigation.css"/>
+    <title></title>
+    <script type="text/javascript">
+        function nTabs(thisObj, Num) {
+            if (thisObj.className == "active") return;
+            var tabList = document.getElementById("myTab").getElementsByTagName("li");
+            for (i = 0; i < tabList.length; i++) {//点击之后，其他tab变成灰色，内容隐藏，只有点击的tab和内容有属性
+                if (i == Num) {
+                    thisObj.className = "active";
+                    document.getElementById("myTab_Content" + i).style.display = "block";
+                } else {
+                    tabList[i].className = "normal";
+                    document.getElementById("myTab_Content" + i).style.display = "none";
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('.nav_center li a.mr_1').addClass('active');
+$('.nav_center li a.mr_2').css('display','inline');
+$('.nav_center li a.main-link').hover(function(){
+	$('.nav_center li a.main-link').removeClass('active');
+	$(this).addClass('active');
+		$(".sub-links").hide();
+		$(this).siblings(".sub-links").fadeIn();
+	});
+});
+</script>
+<style type="text/css">
+.sub_content p{
+    color:#CCCCCC;
+	text-indent:2em;
+}
+</style>
+</head>
+<body>
+<!-----------------头部------------------->
+<div class="logo_bg">
+    <div class="logo"><img src="img/logo.gif" /></div>
+</div>
+<div class="nav">
+   <div class="nav_center">
+       <ul>
+           <li>
+              <a href="index.html" class="main-link mr_1"><p class="top">首页</p><p class="down">Home Page</p></a>
+           </li>
+           <li class="ups">
+              <a href="enter.html" class="main-link"><p class="top">走进五粮液</p><p class="down">StepIn</p></a>
+                <ul class="sub-links">
+                   <li class="first"><a href="enter.html">品牌文化 ></a></li>
+                   <li><a href="enter.html">企业战略 ></a></li>
+                   <li><a href="enter.html">社会责任 ></a></li>
+                   <li><a href="enter.html">回报社会</a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="news.html" class="main-link"><p class="top">新闻动态</p><p class="down">News</p></a>
+                <ul class="sub-links">
+                   <li class="first"><a href="news.html">公司新闻 ></a></li>
+                   <li><a href="news.html">行业动态 ></a></li>
+                   <li><a href="news.html"> 营销活动 </a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="show_product.html" class="main-link"><p class="top">产品中心</p><p class="down">Product</p></a>
+              <ul class="sub-links">
+                   <li class="first"><a href="show_product.html">红16 ></a></li>
+                   <li><a href="show_product.html">百家宴 ></a></li>
+                   <li><a href="show_product.html">五粮情 > </a></li>
+                   <li><a href="show_product.html">一帆风顺 </a></li>
+                </ul>
+           </li>
+           <li style="margin-left:240px;" >
+              <a href="up.html" class="main-link"><p class="top">红酒升级</p><p class="down">Liquor Up</p></a>
+                 <ul class="sub-links">
+                   <li class="first"><a href="up.html">红酒升级 ></a></li>
+                   <li><a href="up.html">石榴物语 ></a></li>
+                   <li><a href="up.html">石榴基地 </a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="canvass.html" class="main-link"><p class="top">招商加盟</p><p class="down">Canvass</p></a>
+              <ul class="sub-links"></ul>
+           </li>
+           <li class="ups">
+              <a href="about.html" class="main-link"><p class="top">关于公司</p><p class="down">About</p></a>
+                 <ul class="sub-links">
+                   <li class="first"><a href="about.html">公司简介 ></a></li>
+                   <li><a href="about.html">企业文化 </a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="contact.html"class="main-link"><p class="top">联系我们</p><p class="down">Contact Us</p></a>
+              <ul class="sub-links"></ul>
+           </li>
+       </ul>
+   </div>
+   <div class="black_bg"></div>
+</div>
+<!-----------------flash------------------->
+<div id="flash"><img src="img/banner.jpg"/></div>
+<!-----------------当前位置------------------->
+<div id="position">
+    <h2 class="location">
+            <p>您的位置 : <a href="index.html" class="first">首页</a>&gt;<a href="news.html" class="first">行业动态</a>&gt;<a href="#" class="now">五粮液酒业..</a></p>
+    </h2>
+</div>
+<!--------------------当前内容--------------------->
+<div id="container">
+    <div class="nTab">    
+        <div class="TabTitle">
+            <ul id="myTab">
+                <li onClick="nTabs(this,0);"><a></a></li>
+                <li class="active first" onClick="nTabs(this,1);"><a>行业动态</a></li>
+
+            </ul>
+        </div>
+        
+        <div class="TabContent">
+            <div id="myTab_Content0">
+               <div class="sub_content">
+                      <p style="text-align:center; font-size:16px; color:#DBB747 ; text-indent:-2em;">五粮液酒业销售 将破200亿元 居行业第一</p>
+                      <p style="padding:2px; border:1px dashed #DBB747 ; text-align:center; padding-left:0;">【<span style="color:#dbb747;">发布时间：</span>2012-5-3】 【<span style="color:#dbb747;">作者/来源></span>: 维护员】 【<span style="color:#dbb747;">阅读：</span>120次】</p>
+                      
+                      <p>五粮液在“十二五”开局之年，形成“量价齐升”的良好格局。继去年销售额、利税分别突破400亿元、100亿元大关后，今年继续保持高速增长，销售收入有望突破500亿元，上缴利税140亿元，其中，酒业销售收入将首次突破200亿元，两类销售收入均居行业第一位。 　</p>
+                      
+                      <p>12月18日，中国白酒文化节重要活动——五粮液集团公司第十五届“12·18”厂商共建共赢大会在宜宾举行，来自全国品牌运营商、行业专家、投资者等1500余人参会。记者从会上了解到，五粮液品牌价值达586.26亿元，首次跃居品牌价值排行榜前三强，连续17年稳居全国食品行业首位。</p>
+                      
+                      <p>五粮液披露，将开启内涵式增长与外延式扩张相结合的未来发展之路，依托其资本、人才、技术等优势，通过兼并、重组、收购等资本运作形式，整合全国白酒优势企业资源，打造新兴增长极，做强全国品牌和区域品牌。</p>
+                      
+                      <p>这是五粮液首次提出通过兼并重组扩张发展，业界专家分析，这必将开启中国酒业整合大幕，引发行业洗牌。面对日趋激烈的行业竞争，五粮液集团公司董事长唐桥表示，将加强各价位段核心品牌建设，将以价格线进行市场划分，做精高端、做强次高端、做大中端、做实低端，实现全产品线覆盖，并确立了明年股份公司30%的增长目标。</p>
+                      
+                      <p> 据了解，“十二五”期间，五粮液集团将集中优势资源，做强白酒主业的规划，并在白酒板块确立重点打造1个世界级白酒品牌、9个全国性白酒品牌、8个区域性强势白酒品牌的目标。为实现该目标，今年开始五粮液加速进军国际市场，积极拓展韩国、日本、美国等市场，出口额占全行业比重达到92%。</p>
+                      
+                      <p> 此前，投资50亿元的五粮液文化特色街区已启动规划建设，由五粮液投资的电视剧 《大酒商》也即将登上银屏。
+</p>
+                      
+                  
+
+                      
+                  
+            
+     
+                      
+                     
+               </div>
+
+            </div>
+       
+        </div>        
+        <br clear="all"></div>        
+    </div>
+</div><!--container结束 -->
+
+<!--------华丽的分割线------->
+<div class="sep"></div>	
+
+<div id="foot">Copyright@2005-2012 浏阳河发展有限公司(www.liuyanghejiu.com) 版权所有！粤ICP备09007094号</div>
+
+
+</body>
+</html>

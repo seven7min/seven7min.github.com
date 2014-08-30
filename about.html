@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="about_css.css"/>
+<link rel="stylesheet" type="text/css" href="navigation.css"/>
+    <title>关于我们</title>
+    <script type="text/javascript">
+        function nTabs(thisObj, Num) {
+            if (thisObj.className == "active") return;
+            var tabList = document.getElementById("myTab").getElementsByTagName("li");
+            for (i = 0; i < tabList.length; i++) {//点击之后，其他tab变成灰色，内容隐藏，只有点击的tab和内容有属性
+                if (i == Num) {
+                    thisObj.className = "active";
+                    document.getElementById("myTab_Content" + i).style.display = "block";
+                } else {
+                    tabList[i].className = "normal";
+                    document.getElementById("myTab_Content" + i).style.display = "none";
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('.nav_center li a.mr_1').addClass('active');
+$('.nav_center li a.mr_2').css('display','inline');
+$('.nav_center li a.main-link').hover(function(){
+	$('.nav_center li a.main-link').removeClass('active');
+	$(this).addClass('active');
+		$(".sub-links").hide();
+		$(this).siblings(".sub-links").fadeIn();
+	});
+});
+</script>
+</head>
+<body>
+<!-----------------头部------------------->
+<div class="logo_bg">
+    <div class="logo"><img src="img/logo.gif" /></div>
+</div>
+<div class="nav">
+   <div class="nav_center">
+       <ul>
+           <li>
+              <a href="index.html" class="main-link mr_1"><p class="top">首页</p><p class="down">Home Page</p></a>
+           </li>
+           <li class="ups">
+              <a href="enter.html" class="main-link"><p class="top">走进五粮液</p><p class="down">StepIn</p></a>
+                <ul class="sub-links">
+                   <li class="first"><a href="enter.html">品牌文化 ></a></li>
+                   <li><a href="enter.html">企业战略 ></a></li>
+                   <li><a href="enter.html">社会责任 ></a></li>
+                   <li><a href="enter.html">回报社会</a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="news.html" class="main-link"><p class="top">新闻动态</p><p class="down">News</p></a>
+                <ul class="sub-links">
+                   <li class="first"><a href="news.html">公司新闻 ></a></li>
+                   <li><a href="news.html">行业动态 ></a></li>
+                   <li><a href="news.html"> 营销活动 </a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="show_product.html" class="main-link"><p class="top">产品中心</p><p class="down">Product</p></a>
+              <ul class="sub-links">
+                   <li class="first"><a href="show_product.html">红16 ></a></li>
+                   <li><a href="show_product.html">百家宴 ></a></li>
+                   <li><a href="show_product.html">五粮情 > </a></li>
+                   <li><a href="show_product.html">一帆风顺 </a></li>
+                </ul>
+           </li>
+           <li style="margin-left:240px;" >
+              <a href="up.html" class="main-link"><p class="top">红酒升级</p><p class="down">Liquor Up</p></a>
+                 <ul class="sub-links">
+                   <li class="first"><a href="up.html">红酒升级 ></a></li>
+                   <li><a href="up.html">石榴物语 ></a></li>
+                   <li><a href="up.html">石榴基地 </a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="canvass.html" class="main-link"><p class="top">招商加盟</p><p class="down">Canvass</p></a>
+              <ul class="sub-links"></ul>
+           </li>
+           <li class="ups">
+              <a href="about.html" class="main-link"><p class="top">关于公司</p><p class="down">About</p></a>
+                 <ul class="sub-links">
+                   <li class="first"><a href="about.html">公司简介 ></a></li>
+                   <li><a href="about.html">企业文化 </a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="contact.html"class="main-link"><p class="top">联系我们</p><p class="down">Contact Us</p></a>
+              <ul class="sub-links"></ul>
+           </li>
+       </ul>
+   </div>
+   <div class="black_bg"></div>
+</div>
+<!-----------------flash------------------->
+<div id="flash"><img src="img/banner.jpg"/></div>
+<!-----------------当前位置------------------->
+<div id="position">
+    <h2 class="location">
+            <p>您的位置 : <a href="index.html" class="first">首页</a>&gt;<a href="#" class="now">关于公司</a></p>
+    </h2>
+</div>
+<!--------------------当前内容--------------------->
+<div id="container">
+    <div class="nTab">    
+        <div class="TabTitle">
+            <ul id="myTab">
+                <li class="active first" onClick="nTabs(this,0);"><a>公司简介</a></li>
+                <li class="normal second" onClick="nTabs(this,1);"><a>企业文化</a></li>
+                <li class="normal second" onClick="nTabs(this,2);"><a>社会责任</a></li>
+            </ul>
+            <div class="sept">分割</div>
+        </div>
+        
+        <div class="TabContent">
+            <div id="myTab_Content0">
+                  <div class="sub_content">
+                      <h2 class="h2_title">公司简介</h2>
+                      <p>五粮液集团有限公司前身是50年代初8家古传酿酒作坊联合组建而成的“中国专卖公司四川省宜宾酒厂”，1959年正式命名为“宜宾五粮液酒厂”，1998年改制为<span>“四川省宜宾五粮液集团有限公司”</span>。</p>
+                      <p>五粮液集团有限公司始坚持<span>“发展才是硬道理”</span>，坚持“敬业奉公，精益克靡，为消费者生、为消费者长，为消费者忧、为消费者乐”的核心价值观，秉承“创新求进、永争第一”的企业精神，通过实施“酒业为主、多元发展”战略，超速发展，不仅成为全球规模最大、生态环境最佳、五种粮食发酵、品质最优、古老与现代完美结合的酿酒圣地、中国的酒业大王，而且在成套小汽车模具、大中小高精尖注射和冲压模具、精密塑胶制品、循环经济、电子科技等诸多领域占领高端，形成了突出优势，发展成为具有深厚企业文化的国有特大型企业集团，建立有国家级企业技术中心和博士后科研工作站，被批准为“全国白酒标准化技术委员会浓香型白酒分技术委员会”秘书处承担单位和第四批全国企事业单位知识产权试点单位，<span>是唯一两次获得国家质量管理奖、唯一两度获得“中国最佳诚信企业”殊荣的白酒企业</span>。公司占地10平方公里，现有职工4万多人。2010年实现销售收入403.61亿元，实现利税111.55亿元；荣列中国企业500强第186位，，中国制造业500强第89位，较2009年上升13位，中国企业效益200佳第90位。</p>
+                      <p>公司十分重视产品技术研发和质量管理，以科技创新为龙头，下大功夫、真功夫推进企业自主创新，数十项科研成果获得国家和省市奖励，多次被评为科技创新先进企业，<span>连续七次荣获“全国食品工业科技进步优秀企业”称号</span>。在发展过程中，五粮液始终沿着质量道路稳打稳扎，通过质量方针的明确和严格实施、质保体系的建立和高效运转、严密的过程控制和卓越的硬件保障、限量保质的理念和执着的优中选优做法，确保了出厂产品零缺陷，被授予全国推行全面质量管理30周年优秀企业、四川省质量管理特别奖等殊荣，树立了质量先进典范；被授予“中国食品安全最具社会责任感企业”和“中国食品安全十强企业”称号、世界低碳环境（中国）推动力百强企业称号、“全国资源综合利用十佳”企业称号。公司坚持科学发展，用高新技术改造传统产业，大力发展循环经济，为和谐社会和经济发展作出了显著贡献。五粮液研制出的<span>科研成果100多项</span>，其中不少都是在国内或行业内首创，极大地推动了白酒行业技术进步。特别是循环经济科技项目取得了显著成效，不但极大地减轻了“三废”对周边环境的污染压力，而且变废为宝，取得了显著的社会效益、环保效益和经济效益，被国家六部委确定为全国首批循环经济试点单位，并被国家环保总局确定为2006年度清洁生产示范单位，中国酿酒工业协会发文号召全行业学习五粮液发展循环经济，增强可持续发展。</p>
+                      <p><span>1999</span>年4月18日，时任中共中央总书记、国家主席的江泽民同志亲临五粮液集团公司视察工作；2000年10月5日，时任全国人大委员长的李鹏同志莅临五粮液集团公司视察工作；<span>2003年5月11日，中共中央总书记、国家主席胡锦涛同志又来到五粮液集团公司视察工作</span>。中央领导高度评价五粮液的建设发展成就，用“发展才是硬道理”总结和肯定五粮液的发展经验，明确要求要“好好保护‘五粮液’这块牌子”。</p>
+                  </div>
+            </div>
+            <div id="myTab_Content1" class="none">
+                  <div class="sub_content">
+                      <h2 class="h2_title">企业文化</h2>
+                      
+                <p style="text-indent:0; color:#DBB747;">企业精神<span style=" margin-left:20px;">: <span style="color:#CCCCCC">以人为本 务实创新 感恩知足 回报社会 经营理念：以诚信取得互信 以友情换得友谊不图一时之利 不争一时之失 目光放长远回报在将来</span></span></p>
+                <p style="text-indent:0;color:#DBB747;">企业愿景<span style=" margin-left:20px;">: <span style="color:#CCCCCC">打造专业的品牌的酒类营销公司</span></span></p>
+                <p style="text-indent:0;color:#DBB747;">核心竞争力<span style=" margin-left:8px;">: <span style="color:#CCCCCC">品牌 团队 文化</span></span></p>
+                <p style="text-indent:0;color:#DBB747;">人才观念<span style=" margin-left:20px;">: <span style="color:#CCCCCC">公开一致的双向沟通 德才兼备 不唯学历重能力 不唯资历重业绩 留住青山留住才</span></span></p>
+                  </div>            
+                 
+            </div>
+            <div id="myTab_Content2" class="none">
+                <div class="sub_content">
+                      <h2 class="h2_title">社会责任</h2>
+                      <p class="dash">	“红16”以“健康生活，源于自然”为口号，提倡健康的生活，自然的生活。
+	石榴酒进入中国主流红酒行列，意味着我们将受到更多的关注，同时也意味我们将承担更多的社会责任，更多的回馈社会。</p>
+                      <h3 style="font-size:12px; height:37; padding-top:8px; margin-bottom:0; margin-top:22px;">--道德义务</h3>
+                      <p style="color:#dbb747; margin-top:0;">“好酒是种出来的”---“红16”酿酒信念</p> 
+                      <p>“红16”选取四川会理大凉山的有机优质石榴为原料，纯天然，无污染。</p> 
+                      <p>大凉山不仅是中国石榴之乡，也是成都红石榴农业开发有限公司的生产基地，拥有20万亩的优质石榴基地。这里全年气候温和，四季如春，气温日差较大，光照雨量充足，具有石榴种植得天独厚的气候资源优势。被四川省农牧厅定为无公害优质石榴示范基地，是中国最佳的水果蔬菜种植生产基地。</p>
+                      <p style="color:#dbb747;">“回馈社会”----企业经营理念</p> 
+                      <p>大凉山作为我们的石榴种植基地，我们整合当地资源，以 “订单”农业为突破口，不但满足公司酿酒石榴原料需求，同时推动大凉山农业经济发展和农民收入增加，真正起到龙头产业的作用。</p>
+                      <h3 style="font-size:12px; height:37; padding-top:8px; margin-top:22;">--自然环境责任</h3>
+                      <p style="margin-top:0;"><span style="color:#dbb747;">1.过去---</span>国家提出整治长江上游水土流失，以种植经济林为主，既保持水土也拉动当地经济发展，做为公司前身的西昌富万利食品有限公司就积极响应，在大凉山大量种植石榴，形成今天的石榴基地。</p> 
+                      <p><span style="color:#dbb747;">2.现在---</span>公司始终坚持“无公害，有机化，天然化，资源循环化”的方针，积极推动循环经济，倡导生态文明。</p>
+                      <p><span style="color:#dbb747;">3.未来---</span>建立建全大凉山环境保护体系，深入贯彻科学发展观，大力倡导和实施可持续发展观。节省资源，安全生产，达标减排，保护生态，“零污染，零排放”，科学发展是我们的新型理念。</p>                                           
+                  </div>  
+            
+            </div>
+            
+        </div>        
+        <br clear="all"></div>        
+    </div>
+</div><!--container结束 -->
+
+<!--------华丽的分割线------->
+<div class="sep"></div>	
+
+<div id="foot">Copyright@2005-2012 浏阳河发展有限公司(www.liuyanghejiu.com) 版权所有！粤ICP备09007094号</div>
+
+
+</body>
+</html>
