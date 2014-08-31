@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="news_css.css"/>
+<link rel="stylesheet" type="text/css" href="navigation.css"/>
+    <title></title>
+    <script type="text/javascript">
+        function nTabs(thisObj, Num) {
+            if (thisObj.className == "active") return;
+            var tabList = document.getElementById("myTab").getElementsByTagName("li");
+            for (i = 0; i < tabList.length; i++) {//点击之后，其他tab变成灰色，内容隐藏，只有点击的tab和内容有属性
+                if (i == Num) {
+                    thisObj.className = "active";
+                    document.getElementById("myTab_Content" + i).style.display = "block";
+                } else {
+                    tabList[i].className = "normal";
+                    document.getElementById("myTab_Content" + i).style.display = "none";
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('.nav_center li a.mr_1').addClass('active');
+$('.nav_center li a.mr_2').css('display','inline');
+$('.nav_center li a.main-link').hover(function(){
+	$('.nav_center li a.main-link').removeClass('active');
+	$(this).addClass('active');
+		$(".sub-links").hide();
+		$(this).siblings(".sub-links").fadeIn();
+	});
+});
+</script>
+<style type="text/css">
+.sub_content p{
+    color:#CCCCCC;
+	text-indent:2em;
+}
+</style>
+</head>
+<body>
+<!-----------------头部------------------->
+<div class="logo_bg">
+    <div class="logo"><img src="img/logo.gif" /></div>
+</div>
+<div class="nav">
+   <div class="nav_center">
+       <ul>
+           <li>
+              <a href="index.html" class="main-link mr_1"><p class="top">首页</p><p class="down">Home Page</p></a>
+           </li>
+           <li class="ups">
+              <a href="enter.html" class="main-link"><p class="top">走进五粮液</p><p class="down">StepIn</p></a>
+                <ul class="sub-links">
+                   <li class="first"><a href="enter.html">品牌文化 ></a></li>
+                   <li><a href="enter.html">企业战略 ></a></li>
+                   <li><a href="enter.html">社会责任 ></a></li>
+                   <li><a href="enter.html">回报社会</a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="news.html" class="main-link"><p class="top">新闻动态</p><p class="down">News</p></a>
+                <ul class="sub-links">
+                   <li class="first"><a href="news.html">公司新闻 ></a></li>
+                   <li><a href="news.html">行业动态 ></a></li>
+                   <li><a href="news.html"> 营销活动 </a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="show_product.html" class="main-link"><p class="top">产品中心</p><p class="down">Product</p></a>
+              <ul class="sub-links">
+                   <li class="first"><a href="show_product.html">红16 ></a></li>
+                   <li><a href="show_product.html">百家宴 ></a></li>
+                   <li><a href="show_product.html">五粮情 > </a></li>
+                   <li><a href="show_product.html">一帆风顺 </a></li>
+                </ul>
+           </li>
+           <li style="margin-left:240px;" >
+              <a href="up.html" class="main-link"><p class="top">红酒升级</p><p class="down">Liquor Up</p></a>
+                 <ul class="sub-links">
+                   <li class="first"><a href="up.html">红酒升级 ></a></li>
+                   <li><a href="up.html">石榴物语 ></a></li>
+                   <li><a href="up.html">石榴基地 </a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="canvass.html" class="main-link"><p class="top">招商加盟</p><p class="down">Canvass</p></a>
+              <ul class="sub-links"></ul>
+           </li>
+           <li class="ups">
+              <a href="about.html" class="main-link"><p class="top">关于公司</p><p class="down">About</p></a>
+                 <ul class="sub-links">
+                   <li class="first"><a href="about.html">公司简介 ></a></li>
+                   <li><a href="about.html">企业文化 </a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="contact.html"class="main-link"><p class="top">联系我们</p><p class="down">Contact Us</p></a>
+              <ul class="sub-links"></ul>
+           </li>
+       </ul>
+   </div>
+   <div class="black_bg"></div>
+</div>
+<!-----------------flash------------------->
+<div id="flash"><img src="img/banner.jpg"/></div>
+<!-----------------当前位置------------------->
+<div id="position">
+    <h2 class="location">
+           <p>您的位置 : <a href="index.html" class="first">首页</a>&gt;<a href="news.html" class="first">新闻动态</a>&gt;<a href="#" class="now">五粮液百家宴由来</a></p>
+    </h2>
+</div>
+<!--------------------当前内容--------------------->
+<div id="container">
+    <div class="nTab">    
+        <div class="TabTitle">
+            <ul id="myTab">
+                <li class="active first" onClick="nTabs(this,0);"><a>公司新闻</a></li>
+
+            </ul>
+        </div>
+        
+        <div class="TabContent">
+            <div id="myTab_Content0">
+               <div class="sub_content">
+                      <p style="text-align:center; font-size:16px; color:#DBB747 ; text-indent:-2em;">五粮液百家宴由来</p>
+                      <p style="padding:2px; border:1px dashed #DBB747 ; text-align:center; padding-left:0;">【<span style="color:#dbb747;">发布时间：</span>2012-5-3】 【<span style="color:#dbb747;">作者/来源></span>: 维护员】 【<span style="color:#dbb747;">阅读：</span>134次】</p>
+                      
+                      <p>百家宴是五粮液零九年下半年重磅推出的中低档嫡系精品，自销品牌，是“五粮液的亲孩子”。</p>
+                      
+                      <p>百家宴系列酒主要分：普通装、精制、精酿、陈酿、珍酿等款式。她以高梁、大米、糯米、小麦和玉米五种粮食为原料，取“万理长江第一城”——四川宜宾千年古泉之水，经过“六道防线”，按照五粮液品牌酒发酵工艺，采用“老五甑法”及“跑五甑法”发酵方式，掐头去尾，精酿而成。它和五粮液一样为纯粮酒，不含任何香精、含醇量极低，属于健康型白酒，喝着顺畅，不口干，不头晕，她以“浓香悠长、纯正醇厚、入口甘美、入喉净爽、各味谐调、酒味全面”的独特风格走上百姓餐桌。滴滴百家宴，浓浓五粮情，百家宴酒的每一瓶酒都流淌着五粮液的血液，代表五粮液的品质，百家宴百姓的五粮液。</p>
+                      
+                      <p>二零一一年五月，东莞海量酒业荣耀成为百家宴东莞市总经销，肩负着东莞、深圳两大区域百家宴的运营重任，成为广东省首家百家宴总经销。东莞海量沐浴着百家宴的春风，竭诚服务，让百家宴在东莞、深圳、广东家喻户晓，开花结果，共饮百家宴，共赞五粮液，让百家宴成为全广东百姓的当家酒！</p>
+                      
+                    
+               </div>
+
+            </div>
+       
+        </div>        
+        <br clear="all"></div>        
+    </div>
+</div><!--container结束 -->
+
+<!--------华丽的分割线------->
+<div class="sep"></div>	
+
+<div id="foot">Copyright@2005-2012 浏阳河发展有限公司(www.liuyanghejiu.com) 版权所有！粤ICP备09007094号</div>
+
+
+</body>
+</html>
