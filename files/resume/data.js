@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"resume.html",
-  "generationDate":new Date(1409477223215.89),
+  "generationDate":new Date(1409481279694.65),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{
@@ -1581,7 +1581,7 @@
             "normal~":"resources/images/transparent.gif"}},
 {
           "id":"d508f82070a8474eab4c571f92c96bc2",
-          "label":"special-1",
+          "label":"special1",
           "type":"horizontalLine",
           "styleType":"horizontalLine",
           "visible":false,
@@ -1603,10 +1603,10 @@
           "images":{
             "start~":"resources/images/transparent.gif",
             "end~":"resources/images/transparent.gif",
-            "line~":"images/resume/special-1_u68_line.png"}},
+            "line~":"images/resume/special1_u68_line.png"}},
 {
           "id":"f085b8cb64314e1bbfcc030c5d26be8e",
-          "label":"special-2",
+          "label":"special2",
           "type":"horizontalLine",
           "styleType":"horizontalLine",
           "visible":false,
@@ -1628,10 +1628,10 @@
           "images":{
             "start~":"resources/images/transparent.gif",
             "end~":"resources/images/transparent.gif",
-            "line~":"images/resume/special-2_u69_line.png"}},
+            "line~":"images/resume/special2_u69_line.png"}},
 {
           "id":"8b814383e0c74e7d8d44c847d8c96a21",
-          "label":"special-3",
+          "label":"special3",
           "type":"horizontalLine",
           "styleType":"horizontalLine",
           "visible":false,
@@ -1653,10 +1653,10 @@
           "images":{
             "start~":"resources/images/transparent.gif",
             "end~":"resources/images/transparent.gif",
-            "line~":"images/resume/special-3_u70_line.png"}},
+            "line~":"images/resume/special3_u70_line.png"}},
 {
           "id":"74737c8f0db54f05a480438c396656f1",
-          "label":"special-4",
+          "label":"special4",
           "type":"horizontalLine",
           "styleType":"horizontalLine",
           "visible":false,
@@ -1678,7 +1678,7 @@
           "images":{
             "start~":"resources/images/transparent.gif",
             "end~":"resources/images/transparent.gif",
-            "line~":"images/resume/special-4_u71_line.png"}},
+            "line~":"images/resume/special4_u71_line.png"}},
 {
           "id":"7ed88890105245009aec6efa8fa5581e",
           "label":"",
@@ -4289,7 +4289,7 @@
                   "color":0xFFEE6F64,
                   "opacity":1}}},
             "location":{
-              "x":733,
+              "x":735,
               "y":655},
             "size":{
               "width":91,
@@ -4321,7 +4321,7 @@
                       "color":0xFFEE6F64,
                       "opacity":1}}},
                 "location":{
-                  "x":733,
+                  "x":735,
                   "y":655},
                 "size":{
                   "width":91,
@@ -4352,7 +4352,7 @@
                   "isNewIfGroup":false,
                   "actions":[{
                       "action":"fadeWidget",
-                      "description":"隐藏 交互设计原则-downline",
+                      "description":"隐藏 交互设计原则downline",
                       "objectsToFades":[{
                           "objectPath":["cc602072a9354ef2b5605a04bc123c50"],
                           "fadeInfo":{
@@ -4366,7 +4366,7 @@
                   "isNewIfGroup":false,
                   "actions":[{
                       "action":"fadeWidget",
-                      "description":"显示 交互设计原则-downline",
+                      "description":"显示 交互设计原则downline",
                       "objectsToFades":[{
                           "objectPath":["cc602072a9354ef2b5605a04bc123c50"],
                           "fadeInfo":{
@@ -4379,13 +4379,13 @@
             "mouseOver~":"resources/images/transparent.gif"}},
 {
           "id":"cc602072a9354ef2b5605a04bc123c50",
-          "label":"交互设计原则-downline",
+          "label":"交互设计原则downline",
           "type":"horizontalLine",
           "styleType":"horizontalLine",
           "visible":true,
           "style":{
             "location":{
-              "x":733,
+              "x":735,
               "y":677},
             "size":{
               "width":83,
@@ -4399,7 +4399,7 @@
           "images":{
             "start~":"resources/images/transparent.gif",
             "end~":"resources/images/transparent.gif",
-            "line~":"images/resume/______-downline_u203_line.png"}},
+            "line~":"images/resume/______downline_u203_line.png"}},
 {
           "id":"c46e73763f0045eba2a28961d303eee2",
           "label":"",
@@ -4910,7 +4910,7 @@
                   "isNewIfGroup":false,
                   "actions":[{
                       "action":"fadeWidget",
-                      "description":"切换 special-1 向右滑动 500 ms,<br>special-2 向右滑动 500 ms,<br>special-3 向右滑动 500 ms,<br>special-4 向右滑动 500 ms",
+                      "description":"切换 special1 向右滑动 500 ms,<br>special2 向右滑动 500 ms,<br>special3 向右滑动 500 ms,<br>special4 向右滑动 500 ms",
                       "objectsToFades":[{
                           "objectPath":["d508f82070a8474eab4c571f92c96bc2"],
                           "fadeInfo":{
@@ -4950,7 +4950,7 @@
                   "isNewIfGroup":false,
                   "actions":[{
                       "action":"fadeWidget",
-                      "description":"隐藏 查看突出能力-downline",
+                      "description":"隐藏 查看突出能力downline",
                       "objectsToFades":[{
                           "objectPath":["ac78e50b16e949099d87bf48922e06f4"],
                           "fadeInfo":{
@@ -4964,7 +4964,7 @@
                   "isNewIfGroup":false,
                   "actions":[{
                       "action":"fadeWidget",
-                      "description":"显示 查看突出能力-downline",
+                      "description":"显示 查看突出能力downline",
                       "objectsToFades":[{
                           "objectPath":["ac78e50b16e949099d87bf48922e06f4"],
                           "fadeInfo":{
@@ -4977,7 +4977,7 @@
             "mouseOver~":"resources/images/transparent.gif"}},
 {
           "id":"ac78e50b16e949099d87bf48922e06f4",
-          "label":"查看突出能力-downline",
+          "label":"查看突出能力downline",
           "type":"horizontalLine",
           "styleType":"horizontalLine",
           "visible":true,
@@ -4997,7 +4997,7 @@
           "images":{
             "start~":"resources/images/transparent.gif",
             "end~":"resources/images/transparent.gif",
-            "line~":"images/resume/______-downline_u203_line.png"}},
+            "line~":"images/resume/______downline_u203_line.png"}},
 {
           "id":"3e9599503b8f4322873bf9d572bdbb8d",
           "label":"",
@@ -5082,7 +5082,7 @@
                   "isNewIfGroup":false,
                   "actions":[{
                       "action":"fadeWidget",
-                      "description":"隐藏 down-line2",
+                      "description":"隐藏 downline2",
                       "objectsToFades":[{
                           "objectPath":["d4160703fb0f4e319001e0c5bd91801e"],
                           "fadeInfo":{
@@ -5096,7 +5096,7 @@
                   "isNewIfGroup":false,
                   "actions":[{
                       "action":"fadeWidget",
-                      "description":"显示 down-line2",
+                      "description":"显示 downline2",
                       "objectsToFades":[{
                           "objectPath":["d4160703fb0f4e319001e0c5bd91801e"],
                           "fadeInfo":{
@@ -5109,7 +5109,7 @@
             "mouseOver~":"resources/images/transparent.gif"}},
 {
           "id":"d4160703fb0f4e319001e0c5bd91801e",
-          "label":"down-line2",
+          "label":"downline2",
           "type":"horizontalLine",
           "styleType":"horizontalLine",
           "visible":true,
@@ -5129,7 +5129,7 @@
           "images":{
             "start~":"resources/images/transparent.gif",
             "end~":"resources/images/transparent.gif",
-            "line~":"images/resume/______-downline_u203_line.png"}},
+            "line~":"images/resume/______downline_u203_line.png"}},
 {
           "id":"d3263d2da5e44293884bf50f9dd68652",
           "label":"",
@@ -5271,11 +5271,14 @@
                   "isNewIfGroup":false,
                   "actions":[{
                       "action":"linkWindow",
-                      "description":"在 新窗口/标签页 打开 id-detail",
+                      "description":"在 新窗口/标签页 打开 http://seven7min.github.io/project01/",
                       "target":{
-                        "targetType":"page",
-                        "url":"id-detail.html",
-                        "includeVariables":true},
+                        "targetType":"webUrl",
+                        "urlLiteral":{
+                          "exprType":"stringLiteral",
+                          "value":"http://seven7min.github.io/project01/",
+                          "stos":[]},
+                        "includeVariables":false},
                       "linkType":"new"}]}]},
             "onMouseOver":{
               "description":"OnMouseOver",
@@ -5284,7 +5287,7 @@
                   "isNewIfGroup":false,
                   "actions":[{
                       "action":"fadeWidget",
-                      "description":"隐藏 down-line2",
+                      "description":"隐藏 downline3",
                       "objectsToFades":[{
                           "objectPath":["9be868d7406c41d7b230130f66419ed7"],
                           "fadeInfo":{
@@ -5298,7 +5301,7 @@
                   "isNewIfGroup":false,
                   "actions":[{
                       "action":"fadeWidget",
-                      "description":"显示 down-line2",
+                      "description":"显示 downline3",
                       "objectsToFades":[{
                           "objectPath":["9be868d7406c41d7b230130f66419ed7"],
                           "fadeInfo":{
@@ -5311,7 +5314,7 @@
             "mouseOver~":"resources/images/transparent.gif"}},
 {
           "id":"9be868d7406c41d7b230130f66419ed7",
-          "label":"down-line2",
+          "label":"downline3",
           "type":"horizontalLine",
           "styleType":"horizontalLine",
           "visible":true,
@@ -5331,7 +5334,7 @@
           "images":{
             "start~":"resources/images/transparent.gif",
             "end~":"resources/images/transparent.gif",
-            "line~":"images/resume/______-downline_u203_line.png"}},
+            "line~":"images/resume/______downline_u203_line.png"}},
 {
           "id":"4ffdd19add9741d5952c3e4f38b21dc4",
           "label":"",
@@ -5797,29 +5800,12 @@
           "style":{
             "location":{
               "x":445,
-              "y":1678},
+              "y":1727},
             "size":{
               "width":386,
-              "height":285}},
+              "height":236}},
           "adaptiveStyles":{
-},
-          "interactionMap":{
-            "onMouseOut":{
-              "description":"OnMouseOut",
-              "cases":[{
-                  "description":"用例 1",
-                  "isNewIfGroup":false,
-                  "actions":[{
-                      "action":"fadeWidget",
-                      "description":"隐藏 special 淡入淡出 1400 ms",
-                      "objectsToFades":[{
-                          "objectPath":["b9cb9b8bc65b4178870c50e543f1839f"],
-                          "fadeInfo":{
-                            "fadeType":"hide",
-                            "options":{
-                              "easing":"fade",
-                              "duration":1400,
-                              "showType":"none"}}}]}]}]}}},
+}},
 {
           "id":"a72132bb1aca4843ad219fce155bdf9b",
           "label":"",
@@ -6146,10 +6132,10 @@
               "opacity":1},
             "lineSpacing":"28px",
             "location":{
-              "x":824,
+              "x":822,
               "y":658},
             "size":{
-              "width":197,
+              "width":200,
               "height":23}},
           "adaptiveStyles":{
 },
@@ -6170,10 +6156,10 @@
                   "opacity":1},
                 "lineSpacing":"28px",
                 "location":{
-                  "x":824,
+                  "x":822,
                   "y":658},
                 "size":{
-                  "width":197,
+                  "width":200,
                   "height":23}},
               "adaptiveStyles":{
 }}],
@@ -6197,12 +6183,13 @@
                   "fillType":"solid",
                   "color":0xFFEE6F64,
                   "opacity":1}}},
+            "paddingTop":"10",
             "location":{
-              "x":468,
-              "y":1697},
+              "x":433,
+              "y":1687},
             "size":{
-              "width":76,
-              "height":14}},
+              "width":131,
+              "height":40}},
           "adaptiveStyles":{
 },
           "objects":[{
@@ -6224,12 +6211,13 @@
                       "fillType":"solid",
                       "color":0xFFEE6F64,
                       "opacity":1}}},
+                "paddingTop":"10",
                 "location":{
-                  "x":468,
-                  "y":1697},
+                  "x":433,
+                  "y":1687},
                 "size":{
-                  "width":76,
-                  "height":14}},
+                  "width":131,
+                  "height":40}},
               "adaptiveStyles":{
 }}],
           "interactionMap":{
@@ -6253,7 +6241,21 @@
                             "loop":false,
                             "showWhenSet":true,
                             "options":{
-                              "compress":false}}}]}]}]}},
+                              "compress":false}}}]}]}]},
+            "onMouseOut":{
+              "description":"OnMouseOut",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"fadeWidget",
+                      "description":"隐藏 special",
+                      "objectsToFades":[{
+                          "objectPath":["b9cb9b8bc65b4178870c50e543f1839f"],
+                          "fadeInfo":{
+                            "fadeType":"hide",
+                            "options":{
+                              "showType":"none"}}}]}]}]}},
           "images":{
             "normal~":"resources/images/transparent.gif",
             "mouseOver~":"resources/images/transparent.gif"}}]}},

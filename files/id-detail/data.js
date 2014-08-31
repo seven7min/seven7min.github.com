@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"id-detail.html",
-  "generationDate":new Date(1409477224210.79),
+  "generationDate":new Date(1409481282161.87),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{
@@ -38,7 +38,7 @@
               "fillType":"solid",
               "color":0xFFF8F8F8},
             "size":{
-              "width":1366,
+              "width":1346,
               "height":1780},
             "borderFill":{
               "fillType":"solid",
@@ -57,7 +57,7 @@
                   "fillType":"solid",
                   "color":0xFFF8F8F8},
                 "size":{
-                  "width":1366,
+                  "width":1346,
                   "height":1780},
                 "borderFill":{
                   "fillType":"solid",
@@ -84,7 +84,7 @@
               "x":0,
               "y":1682},
             "size":{
-              "width":1366,
+              "width":1346,
               "height":100},
             "borderFill":{
               "fillType":"solid",
@@ -110,7 +110,7 @@
                   "x":0,
                   "y":1682},
                 "size":{
-                  "width":1366,
+                  "width":1346,
                   "height":100},
                 "borderFill":{
                   "fillType":"solid",
@@ -1938,10 +1938,10 @@
             "fontName":"'Microsoft YaHei UI Bold', 'Microsoft YaHei UI'",
             "fontSize":"28px",
             "location":{
-              "x":384,
+              "x":395,
               "y":109},
             "size":{
-              "width":281,
+              "width":225,
               "height":36}},
           "adaptiveStyles":{
 },
@@ -1956,10 +1956,10 @@
                 "fontName":"'Microsoft YaHei UI Bold', 'Microsoft YaHei UI'",
                 "fontSize":"28px",
                 "location":{
-                  "x":384,
+                  "x":395,
                   "y":109},
                 "size":{
-                  "width":281,
+                  "width":225,
                   "height":36}},
               "adaptiveStyles":{
 }}],
@@ -1996,10 +1996,10 @@
           "visible":true,
           "style":{
             "location":{
-              "x":674,
+              "x":640,
               "y":122},
             "size":{
-              "width":366,
+              "width":400,
               "height":10},
             "borderFill":{
               "fillType":"solid",
@@ -2093,7 +2093,7 @@
                   "isNewIfGroup":false,
                   "actions":[{
                       "action":"fadeWidget",
-                      "description":"隐藏 查看交互原则-downline",
+                      "description":"隐藏 查看交互原则downline",
                       "objectsToFades":[{
                           "objectPath":["a551e4d1e32b40719b207b17787675b0"],
                           "fadeInfo":{
@@ -2107,7 +2107,7 @@
                   "isNewIfGroup":false,
                   "actions":[{
                       "action":"fadeWidget",
-                      "description":"显示 查看交互原则-downline",
+                      "description":"显示 查看交互原则downline",
                       "objectsToFades":[{
                           "objectPath":["a551e4d1e32b40719b207b17787675b0"],
                           "fadeInfo":{
@@ -2120,7 +2120,7 @@
             "mouseOver~":"resources/images/transparent.gif"}},
 {
           "id":"a551e4d1e32b40719b207b17787675b0",
-          "label":"查看交互原则-downline",
+          "label":"查看交互原则downline",
           "type":"horizontalLine",
           "styleType":"horizontalLine",
           "visible":true,
@@ -2140,7 +2140,7 @@
           "images":{
             "start~":"resources/images/transparent.gif",
             "end~":"resources/images/transparent.gif",
-            "line~":"images/id-detail/______-downline_u88_line.png"}},
+            "line~":"images/id-detail/______downline_u88_line.png"}},
 {
           "id":"c09575ed011b483db37671e46b7da387",
           "label":"",
@@ -2261,11 +2261,14 @@
                   "isNewIfGroup":false,
                   "actions":[{
                       "action":"linkWindow",
-                      "description":"在 新窗口/标签页 打开 resume",
+                      "description":"在 新窗口/标签页 打开 http://seven7min.github.io/",
                       "target":{
-                        "targetType":"page",
-                        "url":"resume.html",
-                        "includeVariables":true},
+                        "targetType":"webUrl",
+                        "urlLiteral":{
+                          "exprType":"stringLiteral",
+                          "value":"http://seven7min.github.io/",
+                          "stos":[]},
+                        "includeVariables":false},
                       "linkType":"new"}]}]}},
           "tabbable":true,
           "images":{
@@ -2481,11 +2484,14 @@
                   "isNewIfGroup":false,
                   "actions":[{
                       "action":"linkWindow",
-                      "description":"在 新窗口/标签页 打开 resume",
+                      "description":"在 新窗口/标签页 打开 http://seven7min.github.io/",
                       "target":{
-                        "targetType":"page",
-                        "url":"resume.html",
-                        "includeVariables":true},
+                        "targetType":"webUrl",
+                        "urlLiteral":{
+                          "exprType":"stringLiteral",
+                          "value":"http://seven7min.github.io/",
+                          "stos":[]},
+                        "includeVariables":false},
                       "linkType":"new"}]}]}},
           "tabbable":true,
           "images":{
