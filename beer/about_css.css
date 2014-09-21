@@ -1,0 +1,217 @@
+body{
+    background:url(img/body_bg.png) repeat-y center center scroll;
+	font-size:12px;
+	margin:0;
+	padding:0;
+	list-style:none;
+	list-style-type:none;
+    color:#760A10;
+	font-family:Microsoft YaHei;
+	line-height:1.6;
+}
+a{
+    color:#760A10;
+	text-decoration:none;
+}
+a:hover{
+    color: #DBB747 ;
+}
+ul,ul li{
+    margin:0;
+	padding:0;
+	list-style-type:none;
+}
+h2{
+    margin:0;
+	padding:0;
+}
+#head{
+    width:100%;
+	height:217px;
+	background-color:#EFEFEF;
+}
+#flash{
+    width:954px;
+	height:314px;
+	background-color:#8A0A10;
+	border:3px #F0F0F0 solid;
+	text-align:center;
+	line-height:320px;
+	color:#FFFFFF;
+	margin:56px auto 0px;
+	overflow:hidden;
+}
+#position{
+    width:960px;
+	height:135px;
+	margin:0px auto 0;
+	position:relative;
+	background:url(img/position_bg.png) repeat-x 0 0 scroll;
+}
+#position h2.location{
+    width:281px;
+	height:135px;
+	background:url(img/about_bg.png) no-repeat 0 0 scroll;
+	position:absolute;
+	left:0;
+	top:0;
+}
+#position h2.location p{
+    font-size:12px;
+	margin:0;
+	margin-top:94px;
+	margin-left:24px;
+}
+#position h2.location p a.first{
+    margin-left:0;
+}
+#position h2.location p a{
+    margin-right:4px;
+	margin-left:4px;
+}
+#position h2.location p a.now{
+    border-bottom:1px #DBB747 dashed;
+	color:#DBB747;
+}
+#position h2.location p a:hover{
+    border-bottom:1px #DBB747 dashed;
+}
+#container{
+    width:100%;
+	background:url(img/r_06.png) no-repeat center 28px scroll;
+}
+.sep{
+    width:960px;
+	height:15px;
+	margin: 0 auto;
+	margin-top:20px;
+	margin-bottom:40px;
+	background:url(img/sep_bg.png) repeat-x 0 0 scroll;    
+}	
+
+        .nTab
+        {
+            width: 960px;
+            margin: 20px auto 0;
+            overflow: hidden;
+        }
+		.TabTitle{
+		    width:329px;
+			float:left;
+			padding-top:60px;
+			height:256px;
+			background:url(img/a7_03.png) no-repeat 0 0 scroll;
+	
+		} 
+        .none
+        {
+            display: none;
+        }
+        .nTab .TabTitle li
+        {
+            height:60px;
+            width:250px;
+			text-align:center;
+			color:#999999;
+			font-size:12px;
+			line-height:60px;		
+        }
+		.nTab .TabTitle li:hover{
+		    color:#FFFFFF !important;
+		}
+        .nTab .TabTitle li a
+        {
+            text-decoration: none;
+			cursor:default;
+			color:#EFEFEF;
+			font-weight:bold;
+        }
+		.nTab .TabTitle li a:hover{
+		    color:#FFFFFF;	
+		}
+        .nTab .TabTitle .active
+        {
+           background:url(img/liactive.png) no-repeat 0 -180px scroll;
+        }
+		.nTab .TabTitle li.normal:hover{
+		    background:url(img/liactive.png) no-repeat 0 -180px scroll;
+		}
+        .nTab .TabContent
+        {   
+		    float:left;
+			width:631px;
+            overflow: hidden;
+            display: block;
+            height: 853px;
+			background:url(img/a9_03.png) no-repeat 0 0 scroll;
+        }
+.sub_content{
+    width:580px;
+	margin:30px auto 0;
+}
+h2.h2_title{
+    display:block;
+	width:96px;
+	font-size:24px;
+	margin-left:220px;
+	color:#DBB747;
+	border-bottom:1px #DBB747 dashed;
+}
+.sub_content p{
+    color:#CCCCCC;
+	line-height:1.5;
+	text-indent:2em;
+}
+.sub_content p span{
+	color:#DBB747;
+}
+.sub_content  ul li{
+    height:80px;
+}
+.nTab .TabContent h3{
+    width:115px;
+	padding-left:20px;
+	height:45px;
+	padding-top:1px;
+	color:#FFFFFF;
+	background:url(img/title-bg.png) no-repeat 0 0 scroll;
+}
+.nTab .TabContent p.title{
+    width:100%;
+	padding:2px;
+	border:1px #DBB747 dashed;
+	font-size:11px;
+	color:#CCCCCC;
+	line-height:1.4;
+	font-family:Microsoft YaHei;
+	margin-bottom:10px;
+}
+.nTab .TabContent ul li{
+    font-size:12px;
+	color:#DBB747;
+	width:100%;
+	height:24px;
+	font-size:12px;
+}
+.nTab .TabContent ul li span{
+    color:#cccccc; 
+}
+#foot{
+    width:100%;
+	height:121px;
+	background:url(img/foot.png) repeat-x 0 0 scroll;
+	margin-top:70px;
+	text-align:center;
+	line-height:121px;
+	color:#FFFFFF;
+}
+.sept{
+    width:250px;
+	height:15px;
+	margin: 0 auto;
+	margin-top:40px;
+
+	float:left;
+	background:url(img/container_bg.png) repeat-x 0 0 scroll;
+	text-indent:-9999px;   
+}

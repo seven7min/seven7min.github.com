@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="news_css.css"/>
+<link rel="stylesheet" type="text/css" href="navigation.css"/>
+    <title></title>
+    <script type="text/javascript">
+        function nTabs(thisObj, Num) {
+            if (thisObj.className == "active") return;
+            var tabList = document.getElementById("myTab").getElementsByTagName("li");
+            for (i = 0; i < tabList.length; i++) {//点击之后，其他tab变成灰色，内容隐藏，只有点击的tab和内容有属性
+                if (i == Num) {
+                    thisObj.className = "active";
+                    document.getElementById("myTab_Content" + i).style.display = "block";
+                } else {
+                    tabList[i].className = "normal";
+                    document.getElementById("myTab_Content" + i).style.display = "none";
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('.nav_center li a.mr_1').addClass('active');
+$('.nav_center li a.mr_2').css('display','inline');
+$('.nav_center li a.main-link').hover(function(){
+	$('.nav_center li a.main-link').removeClass('active');
+	$(this).addClass('active');
+		$(".sub-links").hide();
+		$(this).siblings(".sub-links").fadeIn();
+	});
+});
+</script>
+<style type="text/css">
+.sub_content p{
+    color:#CCCCCC;
+	text-indent:2em;
+}
+</style>
+</head>
+<body>
+<!-----------------头部------------------->
+<div class="logo_bg">
+    <div class="logo"><img src="img/logo.gif" /></div>
+</div>
+<div class="nav">
+   <div class="nav_center">
+       <ul>
+           <li>
+              <a href="index.html" class="main-link mr_1"><p class="top">首页</p><p class="down">Home Page</p></a>
+           </li>
+           <li class="ups">
+              <a href="enter.html" class="main-link"><p class="top">走进五粮液</p><p class="down">StepIn</p></a>
+                <ul class="sub-links">
+                   <li class="first"><a href="enter.html">品牌文化 ></a></li>
+                   <li><a href="enter.html">企业战略 ></a></li>
+                   <li><a href="enter.html">社会责任 ></a></li>
+                   <li><a href="enter.html">回报社会</a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="news.html" class="main-link"><p class="top">新闻动态</p><p class="down">News</p></a>
+                <ul class="sub-links">
+                   <li class="first"><a href="news.html">公司新闻 ></a></li>
+                   <li><a href="news.html">行业动态 ></a></li>
+                   <li><a href="news.html"> 营销活动 </a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="show_product.html" class="main-link"><p class="top">产品中心</p><p class="down">Product</p></a>
+              <ul class="sub-links">
+                   <li class="first"><a href="show_product.html">红16 ></a></li>
+                   <li><a href="show_product.html">百家宴 ></a></li>
+                   <li><a href="show_product.html">五粮情 > </a></li>
+                   <li><a href="show_product.html">一帆风顺 </a></li>
+                </ul>
+           </li>
+           <li style="margin-left:240px;" >
+              <a href="up.html" class="main-link"><p class="top">红酒升级</p><p class="down">Liquor Up</p></a>
+                 <ul class="sub-links">
+                   <li class="first"><a href="up.html">红酒升级 ></a></li>
+                   <li><a href="up.html">石榴物语 ></a></li>
+                   <li><a href="up.html">石榴基地 </a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="canvass.html" class="main-link"><p class="top">招商加盟</p><p class="down">Canvass</p></a>
+              <ul class="sub-links"></ul>
+           </li>
+           <li class="ups">
+              <a href="about.html" class="main-link"><p class="top">关于公司</p><p class="down">About</p></a>
+                 <ul class="sub-links">
+                   <li class="first"><a href="about.html">公司简介 ></a></li>
+                   <li><a href="about.html">企业文化 </a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="contact.html"class="main-link"><p class="top">联系我们</p><p class="down">Contact Us</p></a>
+              <ul class="sub-links"></ul>
+           </li>
+       </ul>
+   </div>
+   <div class="black_bg"></div>
+</div>
+<!-----------------flash------------------->
+<div id="flash"><img src="img/banner.jpg"/></div>
+<!-----------------当前位置------------------->
+<div id="position">
+    <h2 class="location">
+            <p>您的位置 : <a href="index.html" class="first">首页</a>&gt;<a href="news.html" class="first">新闻动态</a>&gt;<a href="#" class="now">喝红酒加入..</a></p>
+    </h2>
+</div>
+<!--------------------当前内容--------------------->
+<div id="container">
+    <div class="nTab">    
+        <div class="TabTitle">
+            <ul id="myTab">
+                <li class="active first" onClick="nTabs(this,0);"><a>公司新闻</a></li>
+
+            </ul>
+        </div>
+        
+        <div class="TabContent">
+            <div id="myTab_Content0">
+               <div class="sub_content">
+                      <p style="text-align:center; font-size:16px; color:#DBB747 ; text-indent:-2em;">喝红酒加入雪碧会醉得更快</p>
+                      <p style="padding:2px; border:1px dashed #DBB747 ; text-align:center; padding-left:0;">【<span style="color:#dbb747;">发布时间：</span>2012-5-3】 【<span style="color:#dbb747;">作者/来源></span>: 维护员】 【<span style="color:#dbb747;">阅读：</span>118次】</p>
+                      <p>朋友聚会时，很多人喜欢喝红酒，觉得红酒对身体伤害较小。酒量不高，一喝就醉。有人说，喝红酒时掺些雪碧不容易醉，是这样吗？ 　　
+                      </p>
+                      <p> 红酒加雪碧，是不少年轻人都喜欢的饮酒方式。大家认为这样喝不仅口感好，而且能起到稀释酒精的作用。但经专家介绍，碳酸饮料中的碳酸会分解形成二氧化碳，促进血液循环，继而加速体内代谢，也就是说会加速身体吸收更多的酒精。所以，红酒加雪碧的喝法反而更容易醉酒。
+ 
+                      </p>
+                      <p>专家介绍，酒精在人体内的分解代谢主要靠肝脏的酶系统中的两种酶：一种是乙醇脱氢酶，另一种是乙醛脱氢酶。在这两种酶参与分解代谢、将酒精分解为乙酸的同时，还需要葡萄糖这个帮手参与共同完成。所以在酒后，吃些葡萄糖含量较高的食物，或者吃些能在体内转化为葡萄糖的食物，如米饭、馒头等，可以帮助解酒。如果醉酒严重，可以直接饮用葡萄糖水。
+
+                      </p>
+                      <p>饮酒对身体伤害很大，尤其是肝脏。所以还是尽量不要大量饮酒甚至酗酒。必须饮酒的话，最好选择对肝脏损伤小的红葡萄酒。千万不要空腹喝酒，或将碳酸饮料和酒掺在一起喝，那样会使胃部在没有保护的情况下加快酒精的吸收速度，使肝脏来不及解毒，导致酒精浓度增高而醉酒。
+</p>
+                      
+
+               </div>
+
+            </div>
+       
+        </div>        
+        <br clear="all"></div>        
+    </div>
+</div><!--container结束 -->
+
+<!--------华丽的分割线------->
+<div class="sep"></div>	
+
+<div id="foot">Copyright@2005-2012 浏阳河发展有限公司(www.liuyanghejiu.com) 版权所有！粤ICP备09007094号</div>
+
+
+</body>
+</html>
