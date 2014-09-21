@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="elastislide.css" />
+<link rel="stylesheet" type="text/css" href="product_css.css"/>
+<link rel="stylesheet" type="text/css" href="navigation.css"/>
+    <title></title>
+    <script type="text/javascript">
+        function nTabs(thisObj, Num) {
+            if (thisObj.className == "active") return;
+            var tabList = document.getElementById("myTab").getElementsByTagName("li");
+            for (i = 0; i < tabList.length; i++) {//点击之后，其他tab变成灰色，内容隐藏，只有点击的tab和内容有属性
+                if (i == Num) {
+                    thisObj.className = "active";
+                    document.getElementById("myTab_Content" + i).style.display = "block";
+                } else {
+                    tabList[i].className = "normal";
+                    document.getElementById("myTab_Content" + i).style.display = "none";
+                }
+            }
+        }
+    </script>
+    <script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('.nav_center li a.mr_1').addClass('active');
+$('.nav_center li a.mr_2').css('display','inline');
+$('.nav_center li a.main-link').hover(function(){
+	$('.nav_center li a.main-link').removeClass('active');
+	$(this).addClass('active');
+		$(".sub-links").hide();
+		$(this).siblings(".sub-links").fadeIn();
+	});
+});
+</script>
+<style type="text/css">
+#product{
+    width:960px;
+	height:261px;
+	background:url(img/c3_09.png) no-repeat -2px 0 scroll;
+	margin:0 auto;
+	padding-top:40px;
+	margin-bottom:40px;
+	line-height:1.2;
+	overflow:hidden;
+	margin-top:-10px;
+}
+#demo {
+overflow:hidden;
+width: 940px;
+height:234px;
+margin:auto;
+}
+#indemo {
+float: left;
+width: 800%;
+}
+#indemo img{
+    border:none;
+	outline:none;
+}
+#demo1 {
+float: left;
+}
+#demo1 a{
+    display:block;
+	float:left;
+	width:180px;
+	height:234px;
+	margin-left:30px;
+}
+#demo2 {
+float: left;
+}
+.sep{
+    width:960px;
+	height:15px;
+	margin: 0 auto;
+	margin-top:60px;
+	margin-bottom:40px;
+	background:url(img/sep_bg.png) repeat-x 0 0 scroll;    
+}
+</style>
+</head>
+<body>
+<!-----------------头部------------------->
+<div class="logo_bg">
+    <div class="logo"><img src="img/logo.gif" /></div>
+</div>
+<div class="nav">
+   <div class="nav_center">
+       <ul>
+           <li>
+              <a href="index.html" class="main-link mr_1"><p class="top">首页</p><p class="down">Home Page</p></a>
+           </li>
+           <li class="ups">
+              <a href="enter.html" class="main-link"><p class="top">走进五粮液</p><p class="down">StepIn</p></a>
+                <ul class="sub-links">
+                   <li class="first"><a href="enter.html">品牌文化 ></a></li>
+                   <li><a href="enter.html">企业战略 ></a></li>
+                   <li><a href="enter.html">社会责任 ></a></li>
+                   <li><a href="enter.html">回报社会</a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="news.html" class="main-link"><p class="top">新闻动态</p><p class="down">News</p></a>
+                <ul class="sub-links">
+                   <li class="first"><a href="news.html">公司新闻 ></a></li>
+                   <li><a href="news.html">行业动态 ></a></li>
+                   <li><a href="news.html"> 营销活动 </a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="show_product.html" class="main-link"><p class="top">产品中心</p><p class="down">Product</p></a>
+              <ul class="sub-links">
+                   <li class="first"><a href="show_product.html">红16 ></a></li>
+                   <li><a href="show_product.html">百家宴 ></a></li>
+                   <li><a href="show_product.html">五粮情 > </a></li>
+                   <li><a href="show_product.html">一帆风顺 </a></li>
+                </ul>
+           </li>
+           <li style="margin-left:240px;" >
+              <a href="up.html" class="main-link"><p class="top">红酒升级</p><p class="down">Liquor Up</p></a>
+                 <ul class="sub-links">
+                   <li class="first"><a href="up.html">红酒升级 ></a></li>
+                   <li><a href="up.html">石榴物语 ></a></li>
+                   <li><a href="up.html">石榴基地 </a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="canvass.html" class="main-link"><p class="top">招商加盟</p><p class="down">Canvass</p></a>
+              <ul class="sub-links"></ul>
+           </li>
+           <li class="ups">
+              <a href="about.html" class="main-link"><p class="top">关于公司</p><p class="down">About</p></a>
+                 <ul class="sub-links">
+                   <li class="first"><a href="about.html">公司简介 ></a></li>
+                   <li><a href="about.html">企业文化 </a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="contact.html"class="main-link"><p class="top">联系我们</p><p class="down">Contact Us</p></a>
+              <ul class="sub-links"></ul>
+           </li>
+       </ul>
+   </div>
+   <div class="black_bg"></div>
+</div>
+<!-----------------flash------------------->
+<div id="flash"><img src="img/banner.jpg"/></div>
+<!-----------------当前位置------------------->
+<div id="position">
+    <h2 class="location">
+            <p>您的位置 : <a href="index.html" class="first">首页</a>&gt;<a href="#" class="now">产品中心</a></p>
+    </h2>
+</div>
+<!--------------------当前内容--------------------->
+<div id="container">
+    <div class="nTab">       
+        <div class="TabTitle">
+            <ul id="myTab">
+                <li class="active first" onClick="nTabs(this,0);"><a>五粮液。红16(666级)</a></li>
+                <li class="normal second" onClick="nTabs(this,1);"><a>五粮液。百家宴</a></li>
+                <li class="normal three" onClick="nTabs(this,2);"><a>五粮液。五粮情</a></li>
+                <li class="normal three" onClick="nTabs(this,3);"><a>五粮液。一帆风顺</a></li>
+            </ul>
+        </div>        
+        <div class="TabContent">
+        
+            <div id="myTab_Content0">
+                <div class="left">
+                    <img src="img/red-666.jpg" />                    
+                </div>
+                <div class="right">
+                    <h5 style="margin-top:50px;">----------------红16石榴酒[666级]----------------</h5>
+                    <div class="clr"></div>
+                    <p><span style="color:#DBB747;">原料：</span>石榴、果糖、食品添加剂（微量二氧化硫）</p>
+                    <p><span style="color:#DBB747;">石榴原汁含量：</span>100%</p>
+                    <p><span style="color:#DBB747;">酒精度：</span>16%vol/700mL</p>
+                    <p><span style="color:#DBB747;">类型：</span>干型</p>
+                    <p><span style="color:#DBB747;">产品标准号：</span>Q/70906664-8•5</p>
+                    <p><span style="color:#DBB747;">产品产地：</span>四川省宜宾市</p>
+                    <p><span style="color:#DBB747;">贮存条件：</span>干燥通风、避光密闭，少量沉淀不影响饮用</p>
+                    <p><span style="color:#DBB747;">适宜贮存温度：</span>10-15℃，在此温度下可长期保存</p>
+                </div>
+                <div class="clr"></div>
+                <div class="about"><p>----源自中国金沙江畔的石榴美酒，配以优质石榴白兰地精致而成。</p>
+                <p>----低温发酵、低温储存，产品呈宝石红色，澄清透明，酒香浓郁舒适、口感甘醇丰满，乃果酒中</p>
+                </div>
+            </div>
+            <div id="myTab_Content1" class="none">                
+                <div class="left">
+                    <img src="img/五粮液百家宴陈酿.jpg" />                    
+                </div>
+                <div class="right">
+                    <h5 style="margin-top:50px;">----------------百家宴陈酿----------------</h5>
+                    <div class="clr"></div>
+                    <p><span style="color:#DBB747;">原料与配料:</span>水、高粱、大米、糯米、小麦、玉米</p>
+                    <p><span style="color:#DBB747;">香型：</span>浓香型</p>
+                    <p><span style="color:#DBB747;">酒精度：</span>52%</p>
+                    <p><span style="color:#DBB747;">规格：</span>1*6瓶装 </p>
+                    <p><span style="color:#DBB747;">净重:</span>500（ml）</p>
+                    <p><span style="color:#DBB747;">产品产地：</span>四川</p>
+                    <p><span style="color:#DBB747;">特产:</span>是</p>
+                    <p><span style="color:#DBB747;">储藏方法:</span>干燥、通风、阴凉和清洁处保存，宜10℃~25℃</p>
+                </div>
+                <div class="clr"></div>
+                <div class="about" style=" margin-top:4px; padding-top:2px; padding-bottom:2px;"><p style="margin-top:2px; margin-bottom:2px;">----百家宴系列发酵的工艺与五粮液一样均采用传统的老五甑法及跑五甑法以香气悠久、味醇厚、入口甘美、绵甜净爽!</p>
+                <p style="margin-top:2px; margin-bottom:2px;">----瓶身精美烤花、防盗盖设计，价格实惠却不失名家风范，常用作喜庆宴会及馈赠亲友的热门选择！也适用一般商务及老百姓各类宴席！</p>
+                <p style="margin-top:2px; margin-bottom:2px;">----五粮液香醇绝伦，多少年来，不知陶醉了多少文人逸士，倾倒了多少学者风流、名人名将。名酒激豪情，美酒助诗兴，放歌挥毫，李白斗酒诗百篇，古今名士皆好酒，赞美之词如河似泉，构成了一部诗情与酒情交相辉映的五粮液颂。这三江汇聚碧波荡起两个月亮</p>
+                </div>                
+            </div>
+            <div id="myTab_Content2" class="none">
+                  <div class="left">
+                    <img src="img/五粮情红装.jpg"/>                    
+                </div>
+                <div class="right">
+                    <h5 style="margin-top:100px;">----------------五粮情红装----------------</h5>
+                    <div class="clr"></div>                    
+                    <p><span style="color:#DBB747;">规格：</span>500ml*6 </p>
+                    <p><span style="color:#DBB747;">产品产地：</span>中国、四川、宜宾</p>
+                    <p><span style="color:#DBB747;">酒精度：</span>52/39%(vol)</p>
+                </div>
+                <div class="clr"></div>
+                <div class="about"><p>----五粮情是出身五粮液的新生品牌、是深具名门风范的中高档白酒；入口甘美、香味醇厚、回味无穷，是采用纯粮固态发酵技术，采取“优质”基酒制作的上乘之作。</p>
+                <p>----五粮情，她是中国五粮系的标志级品牌，是宜宾五粮液股份有限公司重磅推出的战略性产品之一！  同时，五粮情，突出的是一个“情”字：父子情、兄弟情、恋人情、师生情、战友情，情同手足、情投意合、情同一家、情满天下！</p>
+                </div>              
+            </div>
+            <div id="myTab_Content3" class="none">                
+                <div class="left">
+                    <img src="img/gelunbu.jpg" />                    
+                </div>
+                <div class="right">
+                    <h5 style="margin-top:50px;">----------------一帆风顺<span style="font-weight:bold">.</span>哥伦布----------------</h5>
+                    <div class="clr"></div>
+                    <p><span style="color:#DBB747; font-weight:bold;">【厂址】:</span>宜宾五粮液股份有限公司</p>
+                    <p><span style="color:#DBB747;">【厂址】：</span>四川宜宾</p>
+                    <p><span style="color:#DBB747;">【条码】：</span>6901382025749 </p>
+                    <p><span style="color:#DBB747;">【规格】：</span>52度 480ml </p>
+                    <p><span style="color:#DBB747;">【香型】:</span>浓香型</p>
+                    <p><span style="color:#DBB747;">【执行标准】：</span>GB/T10781-1(优级）</p>
+                    <p><span style="color:#DBB747;">【保质期】:</span>无保质期（酒越陈越好） </p>
+                    <p><span style="color:#DBB747;">【适用场合】:</span>礼节拜访，酒席 婚宴 </p>
+                </div>
+                <div class="clr"></div>
+                <div class="about" style=" margin-top:4px; padding-top:2px; padding-bottom:2px;"><p style="margin-top:2px; margin-bottom:2px;">----思想有多远，步伐就能走多远。” 哥伦布，一个高瞻远瞩的蹈海者，开启了一个新大陆纪元，在世界文明史上留下浓墨重彩一笔。一帆风顺，寄寓着人们对实现理想的美好期待与祝福，同时赋予五粮液酒品极高的审美价值，是一款值得珍藏和馈赠五粮佳品。五粮液一帆风顺酒乃艺术与品质的完美结合，它的原酒取自五粮液集团公司传世的陈年老窖，经精心勾兑而成，品质超凡，乃酒中上佳珍品。扬帆风行的水晶玻璃瓶造型，由水晶玻璃一次性制作完成，通体晶莹透彻，浑然天成，外型为水滴造型，内有帆船造型，瓶体分为内外两层，仅瓶底相连，打破了传统的酒瓶造型技术，不仅祝福购买者万事大吉、一帆风顺，更赋予了五粮液一帆风顺酒极强的审美价值，是理想的收藏品和礼物。</p>
+                </div>
+            </div>
+    </div>
+    
+    
+
+    
+    
+</div><!--container结束 -->
+
+<!-----------------产品展示------------------->
+<div id="product">
+    <div id="demo">
+      <div id="indemo">
+      
+        <div id="demo1">
+        <a >
+            <img src="img/yffs_4.png"/>
+
+          </a>
+          <a >
+            <img src="img/hong16.png"/>
+          </a>
+          <a>
+            <img src="img/bjyan_1.png"/>
+
+          </a>
+          <a >
+            <img src="img/wlqing_1.png"/>
+          </a>
+          <a >
+            <img src="img/bjyan_3.png"/>
+
+          </a>
+          
+          <a >
+            <img src="img/wlqing_2.png"/>
+
+          </a>
+          <a >
+            <img src="img/yffs_6.png"/>
+
+          </a>
+          <a >
+            <img src="img/yffs_1.png"/>
+
+          </a>
+          <a >
+            <img src="img/wlqing_3.png"/>
+
+          </a>
+          <a>
+            <img src="img/yffs_2.png"/>
+
+          </a>
+          <a >
+            <img src="img/wlqing_4.png"/>
+          </a>
+          
+          
+          <a >
+            <img src="img/yffs_3.png"/>
+
+          </a>
+          
+          <a >
+            <img src="img/yffs_5.png"/>
+
+          </a>
+          
+        <div id="demo2"></div>
+        
+    </div>
+  </div>
+</div>   
+</div> 
+
+<!--------华丽的分割线------->
+<div class="sep" style="margin-top:-20px;"></div>	
+
+<div id="foot">Copyright@2005-2012 浏阳河发展有限公司(www.liuyanghejiu.com) 版权所有！粤ICP备09007094号</div>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+		<script type="text/javascript">
+			
+			$('#carousel').elastislide({
+				imageW 		: 190,
+				margin		: 45,
+				border		: 4,
+				easing		: 'easeInBack'
+			});
+			
+		</script>
+        
+        <script>
+<!--
+var speed=30;
+var tab=document.getElementById("demo");
+var tab1=document.getElementById("demo1");
+var tab2=document.getElementById("demo2");
+tab2.innerHTML=tab1.innerHTML;
+function Marquee(){
+if(tab2.offsetWidth-tab.scrollLeft<=0)
+tab.scrollLeft-=tab1.offsetWidth
+else{
+tab.scrollLeft++;
+}
+}
+var MyMar=setInterval(Marquee,speed);
+tab.onmouseover=function() {clearInterval(MyMar)};
+tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+-->
+</script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="news_css.css"/>
+<link rel="stylesheet" type="text/css" href="navigation.css"/>
+    <title></title>
+    <script type="text/javascript">
+        function nTabs(thisObj, Num) {
+            if (thisObj.className == "active") return;
+            var tabList = document.getElementById("myTab").getElementsByTagName("li");
+            for (i = 0; i < tabList.length; i++) {//点击之后，其他tab变成灰色，内容隐藏，只有点击的tab和内容有属性
+                if (i == Num) {
+                    thisObj.className = "active";
+                    document.getElementById("myTab_Content" + i).style.display = "block";
+                } else {
+                    tabList[i].className = "normal";
+                    document.getElementById("myTab_Content" + i).style.display = "none";
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('.nav_center li a.mr_1').addClass('active');
+$('.nav_center li a.mr_2').css('display','inline');
+$('.nav_center li a.main-link').hover(function(){
+	$('.nav_center li a.main-link').removeClass('active');
+	$(this).addClass('active');
+		$(".sub-links").hide();
+		$(this).siblings(".sub-links").fadeIn();
+	});
+});
+</script>
+<style type="text/css">
+.sub_content p{
+    color:#CCCCCC;
+	text-indent:2em;
+}
+</style>
+</head>
+<body>
+<!-----------------头部------------------->
+<div class="logo_bg">
+    <div class="logo"><img src="img/logo.gif" /></div>
+</div>
+<div class="nav">
+   <div class="nav_center">
+       <ul>
+           <li>
+              <a href="index.html" class="main-link mr_1"><p class="top">首页</p><p class="down">Home Page</p></a>
+           </li>
+           <li class="ups">
+              <a href="enter.html" class="main-link"><p class="top">走进五粮液</p><p class="down">StepIn</p></a>
+                <ul class="sub-links">
+                   <li class="first"><a href="enter.html">品牌文化 ></a></li>
+                   <li><a href="enter.html">企业战略 ></a></li>
+                   <li><a href="enter.html">社会责任 ></a></li>
+                   <li><a href="enter.html">回报社会</a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="news.html" class="main-link"><p class="top">新闻动态</p><p class="down">News</p></a>
+                <ul class="sub-links">
+                   <li class="first"><a href="news.html">公司新闻 ></a></li>
+                   <li><a href="news.html">行业动态 ></a></li>
+                   <li><a href="news.html"> 营销活动 </a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="show_product.html" class="main-link"><p class="top">产品中心</p><p class="down">Product</p></a>
+              <ul class="sub-links">
+                   <li class="first"><a href="show_product.html">红16 ></a></li>
+                   <li><a href="show_product.html">百家宴 ></a></li>
+                   <li><a href="show_product.html">五粮情 > </a></li>
+                   <li><a href="show_product.html">一帆风顺 </a></li>
+                </ul>
+           </li>
+           <li style="margin-left:240px;" >
+              <a href="up.html" class="main-link"><p class="top">红酒升级</p><p class="down">Liquor Up</p></a>
+                 <ul class="sub-links">
+                   <li class="first"><a href="up.html">红酒升级 ></a></li>
+                   <li><a href="up.html">石榴物语 ></a></li>
+                   <li><a href="up.html">石榴基地 </a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="canvass.html" class="main-link"><p class="top">招商加盟</p><p class="down">Canvass</p></a>
+              <ul class="sub-links"></ul>
+           </li>
+           <li class="ups">
+              <a href="about.html" class="main-link"><p class="top">关于公司</p><p class="down">About</p></a>
+                 <ul class="sub-links">
+                   <li class="first"><a href="about.html">公司简介 ></a></li>
+                   <li><a href="about.html">企业文化 </a></li>
+                </ul>
+           </li>
+           <li class="ups">
+              <a href="contact.html"class="main-link"><p class="top">联系我们</p><p class="down">Contact Us</p></a>
+              <ul class="sub-links"></ul>
+           </li>
+       </ul>
+   </div>
+   <div class="black_bg"></div>
+</div>
+<!-----------------flash------------------->
+<div id="flash"><img src="img/banner.jpg"/></div>
+<!-----------------当前位置------------------->
+<div id="position">
+    <h2 class="location">
+              <p>您的位置 : <a href="index.html" class="first">首页</a>&gt;<a href="news.html" class="first">新闻动态</a>&gt;<a href="#" class="now">高档白酒已成..</a></p>
+    </h2>
+</div>
+<!--------------------当前内容--------------------->
+<div id="container">
+    <div class="nTab">    
+        <div class="TabTitle">
+            <ul id="myTab">
+                <li class="active first" onClick="nTabs(this,0);"><a>公司新闻</a></li>
+
+            </ul>
+        </div>
+        
+        <div class="TabContent">
+            <div id="myTab_Content0">
+               <div class="sub_content">
+                      <p style="text-align:center; font-size:16px; color:#DBB747 ; text-indent:-2em;">高档白酒已成“投资品” 卖掉不如家藏</p>
+                      <p style="padding:2px; border:1px dashed #DBB747 ; text-align:center; padding-left:0;">【<span style="color:#dbb747;">发布时间：</span>2012-5-3】 【<span style="color:#dbb747;">作者/来源></span>: 维护员】 【<span style="color:#dbb747;">阅读：</span>108次】</p>
+                      <p>高档白酒已成“投资品” 卖掉不如家藏
+                      </p>
+                      <p> 今年的礼品回收市场上,烟酒回收遇冷。记者调查发现，高档白酒近年来价格一路涨，与其拿出来卖掉，还不如留在家里“保值增值”。
+ 
+                      </p>
+                      <p>高档白酒已成“投资品”
+                      </p>
+                      <p>春节过后向来是高档烟酒回收的“旺”季，不过，昨日记者走访了我区部分礼品回收店和烟酒店发现，今年的烟酒回收生意不太好。
+　昨日，记者走访了我区一些烟酒店，在店门口都发现挂有“回收烟酒”的牌子。在北干一苑的一家烟酒店，店内营业员对记者说：“现在不太收烟酒，假货太多。他们之前收过两次假烟，损失还蛮大。而高档的酒类，假货泛滥，真货未必会拿来回掉！”
+　这倒是道出了高档白酒回收遇冷的一个原因：近年来价格突飞猛涨，这些酒都成了“投资品”，越来越多的人都选择了收藏而不是拿出来卖。
+　记者又走访了江寺路上的几家小型的烟酒店，某店老板王先生告诉记者，礼品回收市场鱼龙混杂，现在回收礼品尤其是烟酒类礼品，基本上都是靠熟人介绍，来路不明的礼品不敢要。记者在该店门口逗留了半个多小时，发现确实没有一个顾客是拎着烟酒上门。
+</p>
+                      <p>
+                      　礼品回收不局限在实体店
+                      </p>
+                      <p>
+                      与以往礼品回收生意仅仅集中在一些个人和烟酒商店“私下交易”不同，如今，各种礼品回收商贩还开动脑筋，将生意做到了网上，比起实体店的相对冷清，网上交易可谓“火爆”。
+　记者随即在网上联系了一个“买家”，其表示，各种中外高档烟酒都可以回收。
+　这位“买家”表示，茅台酒是一天一个价，53度的飞天茅台，去年年初的时候大概是600多元一瓶，到了去年上半年就涨到了700多元，现在外面卖1200多元，但只要这种酒有人肯卖我，我不愁找不到下家。
+　另一位活跃在网上的“买家”，则对记者打出“诚信牌”，表示自己做这种生意已经十几年了，目前虽然没有店面，但保证“我给你的报价都高于其他烟酒店。”他提醒记者。
+                      </p>
+                        <p>
+                        　礼品回收其实不合法
+                      </p>
+                        <p>
+                        不管是实体店也好，“网络交易”也好，可以肯定的是，回收香烟是违法行为。据《烟草专卖法实施条例》第25条第2款规定，“取得烟草专卖零售许可证的企业或者个人，应当在当地的烟草专卖批发企业进货，并接受烟草专卖许可证发证机关的监督管理”。这意味着，除了当地烟草批发企业，其他进货渠道都是违法的。
+　记者从工商部门了解到，目前在我国经营的“礼品回收”属于无证经营、超范围经营。尤其是我国采取烟草专卖制度，个体回收香烟是被国家明令禁止的。
+　浙江钱江潮律师事务所的律师袁小霞表示，进行礼品回收不仅属于超范围经营，干扰了正常的市场秩序，而且网上进行礼品回收买卖其危害性更大，回收者甚至可能构成犯罪。因为网上交易途径的特点决定了回收者很难弄清货主的真实身份，一旦礼品是受贿等不正当途径而来，那么回收者将有可能触犯刑法，承担例如销赃罪等刑事法律责任。而对于从回收者手中二次购买礼品的买家来说，更不能被低廉的价格所迷惑，礼品回收不在国家法律允许范围内，回收礼品不受法律保护，买了这样的东西没有保障，一旦出现纠纷买家只能吃“哑巴亏”。
+                      </p>
+         
+                      
+
+               </div>
+
+            </div>
+       
+        </div>        
+        <br clear="all"></div>        
+    </div>
+</div><!--container结束 -->
+
+<!--------华丽的分割线------->
+<div class="sep"></div>	
+
+<div id="foot">Copyright@2005-2012 浏阳河发展有限公司(www.liuyanghejiu.com) 版权所有！粤ICP备09007094号</div>
+
+
+</body>
+</html>
