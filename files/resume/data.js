@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"resume.html",
-  "generationDate":new Date(1411304742973.35),
+  "generationDate":new Date(1411305575291.39),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{
@@ -6425,10 +6425,14 @@
                   "isNewIfGroup":false,
                   "actions":[{
                       "action":"linkWindow",
-                      "description":"在 新窗口/标签页 打开 链接",
+                      "description":"在 新窗口/标签页 打开 m1905/m1905.html",
                       "target":{
-                        "targetType":"page",
-                        "includeVariables":true},
+                        "targetType":"webUrl",
+                        "urlLiteral":{
+                          "exprType":"stringLiteral",
+                          "value":"m1905/m1905.html",
+                          "stos":[]},
+                        "includeVariables":false},
                       "linkType":"new"}]}]},
             "onMouseOver":{
               "description":"OnMouseOver",
